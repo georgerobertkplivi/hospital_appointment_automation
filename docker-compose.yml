@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  hospital_appointment_test:
+    build: .
+    volumes:
+      - .:/app
+    command: pytest --alluredir=./reports
