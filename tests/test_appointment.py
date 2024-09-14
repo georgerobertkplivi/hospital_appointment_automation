@@ -29,7 +29,7 @@ def test_make_appointment(home_page, appointment_booking_page, confirmation_page
     (appointment_booking_page.fill_username("John Doe").fill_password("ThisIsNotAPassword").
      select_facility("Hongkong CURA Healthcare Center").
      check_apply_for_hospital_readmission().
-     check_program("Medicaid").select_visit_date("11").
+     check_program("Medicaid").select_visit_date("11/01/2024").
      fill_comment("Test Appointment").click_book_appointment())
 
     confirmation_page.get_heading().to_be_visible()
